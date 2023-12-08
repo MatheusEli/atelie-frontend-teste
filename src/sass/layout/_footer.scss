@@ -1,0 +1,29 @@
+.footer {
+    background-color: $color-yellow;
+    padding: 1.3rem 18%;
+    display: flex;
+    justify-content: space-between;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 1.1rem;
+
+    @include respond(tab-land){
+        padding: 1.3rem 5rem;
+        font-size: 1.6rem;
+    }
+
+    @include respond(phone){
+        flex-direction: column;
+        padding: 1.3rem 10%;
+        font-size: 1.6rem;
+
+        p:first-of-type{
+            margin-bottom: 1rem;
+        }
+    }
+
+    a{
+        color: black;
+        cursor: pointer;
+    }
+}

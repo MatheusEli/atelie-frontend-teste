@@ -1,0 +1,66 @@
+.info-section {
+    background-image: url("../../assets/background-cinza.png");
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10rem;
+    padding: 8rem 18%;
+
+    @include respond(tab-land){
+      padding: 8rem 5rem;
+
+      img{
+        width: 20%;
+      }
+    }
+  
+    @include respond(phone) {
+      flex-direction: column;
+      padding: 5rem;
+  
+      img {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
+  
+    &__text-box {
+      width: 70%;
+  
+      @include respond(phone) {
+        width: 100%;
+      }
+    }
+  
+    &__title {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #444445;
+      line-height: 3.5rem;
+      width: 55rem;
+  
+      @include respond(phone) {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  
+    &__text {
+      font-size: 1.2rem;
+      margin-top: 2.5rem;
+      color: #7a7a7a;
+      font-weight: 500;
+      text-align: justify;
+
+      @include respond(tab-land){
+        font-size: 1.4rem;
+      }
+  
+      @include respond(phone) {
+        font-size: 1.6rem;
+        text-align: left;
+        margin: 5rem 0;
+      }
+    }
+  }
+  

@@ -1,0 +1,100 @@
+.form-section {
+    color: $color-white;
+    background-image: url("../../assets/background-marrom.png");
+    padding: 5rem 0;
+    &__title {
+      font-size: 2.8rem;
+      font-weight: 900;
+      letter-spacing: .8px;
+      text-align: center;
+    }
+  
+    &__text {
+      font-size: 1.8rem;
+      width: 45rem;
+      text-align: center;
+      margin: 3rem auto 0 auto;
+      font-weight: 500;
+
+      @include respond(phone){
+        width: 100%;
+        padding: 0 5rem;
+      }
+    }
+  
+    .form {
+      padding: 5rem 25%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include respond(tab-land){
+        padding: 5rem;
+      }
+  
+      &__input-box {
+        width: 48%;
+        margin: 2rem 0;
+  
+        @include respond(phone){
+          width: 100%;
+        }
+        &:first-of-type {
+          width: 100%;
+        }
+  
+        label {
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+  
+        input,
+        select {
+          width: 100%;
+          font-family: "Lato", sans-serif;
+          font-weight: 500;
+          background-color: transparent;
+          border-style: none;
+          border-bottom: 2.5px solid $color-white;
+          color: $color-white;
+          padding: 0.8rem 0;
+          font-size: 1.8rem;
+  
+          option {
+            color: black;
+            font-weight: 500;
+          }
+  
+          &.campo-obrigatorio {
+            border-bottom: 2.5px solid $color-yellow;
+          }
+  
+          &::placeholder {
+            font-family: "Lato", sans-serif;
+            font-size: 1.8rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+            color: $color-white;
+          }
+  
+          &:focus-visible {
+            outline: none;
+          }
+        }
+      }
+  
+      button {
+        display: block;
+        margin: 3rem auto 0 auto;
+  
+        &:disabled {
+          background-color: gray;
+          cursor: auto;
+  
+          &:hover {
+            transform: none;
+          }
+        }
+      }
+    }
+  }

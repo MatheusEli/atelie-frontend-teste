@@ -61,7 +61,7 @@ export default function SignUpForm() {
     event.preventDefault();
     try {
       await axios.post(
-        process.env.REACT_APP_ATELIE_URL,
+        'https://api.teste-frontend.ateliedepropaganda.com.br/v1/register',
         {
           name: dados.name,
           email: dados.email,

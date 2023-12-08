@@ -1,5 +1,7 @@
 .info-section {
     background-image: url("../../assets/background-cinza.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: space-between;
     column-gap: 10rem;

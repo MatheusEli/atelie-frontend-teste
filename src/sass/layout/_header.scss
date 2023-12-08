@@ -1,9 +1,11 @@
 .header {
   height: 100vh;
   background-image: url("../../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 
-  @include respond(tab-land){
+  @include respond(tab-land) {
     height: 50vh;
   }
 
@@ -25,7 +27,7 @@
     animation-duration: 2s;
     animation-timing-function: ease-out;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       right: 3%;
       width: 60%;
       top: 13%;
@@ -50,7 +52,7 @@
     animation-duration: 2s;
     animation-timing-function: ease-out;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       width: 30%;
       top: 20%;
       left: 5%;
@@ -71,7 +73,7 @@
     left: 18%;
     z-index: 1;
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       left: 5%;
     }
 
@@ -108,7 +110,7 @@
       margin-right: 1.5rem;
     }
 
-    @include respond(tab-land){
+    @include respond(tab-land) {
       font-size: 2.3rem;
       width: 20rem;
 

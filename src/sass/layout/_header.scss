@@ -19,9 +19,9 @@
     top: 4%;
     right: 13%;
     width: 50%;
-    height: 80%;
+    height: 96vh;
     background-image: url("../../assets/clouds.png");
-    background-size: 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     animation-name: moveInLeft;
     animation-duration: 2s;
@@ -53,7 +53,7 @@
     animation-timing-function: ease-out;
 
     @include respond(tab-land) {
-      width: 30%;
+      width: 25%;
       top: 20%;
       left: 5%;
     }
